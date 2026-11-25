@@ -1,0 +1,52 @@
+# ---- Secrets / local config ----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ---- Backend: Java / Maven / Spring Boot ----
+backend/target/
+*.class
+*.jar
+*.war
+*.log
+hs_err_pid*
+replay_pid*
+.mvn/wrapper/maven-wrapper.jar
+backend/src/main/resources/application-local.yml
+backend/src/main/resources/application-local.properties
+
+# ---- Frontend: Node / Next.js ----
+node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/coverage/
+*.tsbuildinfo
+next-env.d.ts
+.vercel
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---- IDEs / editors ----
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.classpath
+.project
+.settings/
+.factorypath
+*.swp
+*~
+
+# ---- OS files ----
+.DS_Store
+Thumbs.db
+desktop.ini
